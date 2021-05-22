@@ -17,3 +17,5 @@ How to Contribute ->
 6. `git commit -m "message"`
 
 7. `git push fork fork_repo_name`
+
+merge multiple commits into one
