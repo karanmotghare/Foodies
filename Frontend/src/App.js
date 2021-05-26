@@ -7,6 +7,7 @@ import Blogger from './Bloggers/Blogger';
 import Advertise from './Advertise/Advertise';
 import Sidebar from './UI/Sidebar';
 import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
+import User from './UI/User';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         </Switch>
         <Sidebar />
       </Router>
+      <User />
    </>
   );
 }

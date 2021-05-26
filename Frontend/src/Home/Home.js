@@ -2,6 +2,7 @@ import React from 'react';
 import { FaBars } from 'react-icons/fa';
 import { useGlobalContext } from '../context';
 
+
 const Home = () => {
     const { openSidebar } = useGlobalContext();
     return (
@@ -9,7 +10,7 @@ const Home = () => {
             <button onClick={openSidebar} className='sidebar-toggle'>
                 <FaBars />Foodies
             </button>
-        
+           
         </main>
     );
 };

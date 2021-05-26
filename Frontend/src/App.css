@@ -230,3 +230,30 @@ Sidebar
     width: 400px;
   }
 }
+
+/*
+======
+User
+======
+*/
+
+.user-display {
+  position: absolute;
+  top: 1.85rem;
+  right: 5.85rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  color: rgb(78, 153, 252);
+  animation: bounce 2s;
+}
+.user-display-img{
+  position: absolute;
+  top: 1.5rem;
+  right: 1.85rem;
+}
+.user-display-img img{
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
