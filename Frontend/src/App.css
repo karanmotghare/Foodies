@@ -95,7 +95,7 @@ Home
 
 main {
   min-height: 100vh;
-  background:rgb(231, 255, 254);
+  background:rgb(248, 255, 255);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -199,7 +199,7 @@ Sidebar
   color: rgb(93, 157, 241);
   transition: all 0.3s linear;
   cursor: pointer;
-  color:rgb(167, 4, 4);
+  color:rgb(93, 157, 241);
   margin-top: 0.2rem;
 }
 .close-btn:hover {
