@@ -3,6 +3,7 @@ import { FaBars } from 'react-icons/fa';
 import { useGlobalContext } from '../context';
 import data from '../Api/data.json';
 import Slideimg from './Slideimg';
+import Details from './Details';
 
 const Restaurant = () => {
     const { openSidebar } = useGlobalContext();
@@ -16,17 +17,11 @@ const Restaurant = () => {
             </button>
             <div>
                 {venue.map((v) => {
-                    let id = v.venue.default_template
-                    //let filename = v.venue.responsive_images.file_names[0];
-                    //const aspect = v.venue.responsive_images.aspect_ratios
-                    //const status = v.venue.responsive_images.aspect_ratios['16:9']
+                   
                     return (
-
                         <div key={v.venue.id.resy} className='res-display'>
-                            <h1>{v.venue.name}</h1>
-                            <h2>{v.venue.average_bill_size}{v.venue.currency_symbol}</h2>
                             <Slideimg v={v.venue.responsive_images} />
-                            <p>{v.templates[id]["content"]["en-us"]["about"]["body"]}</p>
+                            <Details v={v}/>
                         </div>
                     )
 

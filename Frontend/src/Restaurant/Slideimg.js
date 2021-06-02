@@ -39,7 +39,7 @@ const Slideimg = ({v}) =>{
     return (
         <article >
             <div className="res-img-container">
-                <img src={img} alt="" className="res-img"/>
+                <img src={img} alt="No Data Found" className="res-img"/>
             </div>
             <div>
                 <button className="prev-btn" onClick={prevImg}><FaChevronLeft /></button>

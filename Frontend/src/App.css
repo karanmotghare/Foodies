@@ -283,6 +283,7 @@ Restaurant CSS
   position: relative;
   width: 100%;
   height: 100%;
+  border-radius: 10%;
   object-fit: cover;
   display: block;
 }
@@ -300,4 +301,20 @@ Restaurant CSS
 .prev-btn:hover,
 .next-btn:hover {
   color: hsl(205, 78%, 60%);
+}
+
+.item-info header{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.5px dotted salmon;
+}
+.item-info header h1,h2{
+  color: hsl(226, 78%, 60%);
+}
+.item-info h4 {
+  margin-bottom: 0.5rem;
+}
+.item-text {
+  margin-bottom: 0;
+  padding-top: 1rem;
 }
