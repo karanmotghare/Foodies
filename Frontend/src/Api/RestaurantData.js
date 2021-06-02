@@ -6,7 +6,7 @@ const options = {
     "port": null,
     "path": "/4/find?lat=37.788719679657554&long=-122.40057774847898&day=2021-02-14&party_size=2&offset=0",
     "headers": {
-        "x-rapidapi-key": "45594b97c1mshf40db17fbd3ea40p16a260jsne9bd8bfcdd5e",
+        "x-rapidapi-key": "",
         "x-rapidapi-host": "resy.p.rapidapi.com",
         "useQueryString": true
     }
