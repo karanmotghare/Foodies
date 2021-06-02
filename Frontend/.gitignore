@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 /./UI/logo.jpg
+/./Api
 
 # testing
 /coverage
