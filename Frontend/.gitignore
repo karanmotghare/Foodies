@@ -5,7 +5,7 @@
 /.pnp
 .pnp.js
 /./UI/logo.jpg
-/./Api
+/./Api/RestaurantData.js
 
 # testing
 /coverage
