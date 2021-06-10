@@ -93,10 +93,16 @@ Home
 ===============
 */
 
-main {
+.main {
   min-height: 100vh;
   background:rgb(248, 255, 255);
-  display: flex;
+  display: grid;
+  grid-template-areas: 
+  "topbar topbar topbar1"
+  "ads content side"
+  "footer footer footer";
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 50px auto 70px;
   justify-content: center;
   align-items: center;
 }
@@ -238,22 +244,20 @@ User
 */
 
 .user-display {
-  position: absolute;
-  top: 1.85rem;
-  right: 5.85rem;
-  width: 1.75rem;
-  height: 1.75rem;
+  position: fixed;
+  grid-area: topbar1;
+  right:0;
+  margin-top:2rem;
+  margin-right: 2rem;
+  justify-self: right;
+  gap: 2rem;
   color: rgb(78, 153, 252);
   animation: bounce 2s;
 }
-.user-display-img{
-  position: absolute;
-  top: 1.5rem;
-  right: 1.85rem;
-}
-.user-display-img img{
-  width: 3rem;
-  height: 3rem;
+
+.user-display img{
+  width: 50px;
+  height: 50px;
   object-fit: cover;
   border-radius: 50%;
 }
@@ -265,12 +269,16 @@ Restaurant CSS
 */
 
 .res-display {
+  grid-area: content;
+}
+.res-display1{
   background: rgb(248, 255, 255);
   padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
   border-radius: 0.25rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);;
   transition: all 0.3s linear;
   text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 .res-img-container{
   position: relative;
@@ -315,6 +323,6 @@ Restaurant CSS
   margin-bottom: 0.5rem;
 }
 .item-text {
-  margin-bottom: 0;
+  margin-bottom: 4rem;
   padding-top: 1rem;
 }
