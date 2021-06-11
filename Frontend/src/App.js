@@ -8,10 +8,17 @@ import Advertise from './Advertise/Advertise';
 import Sidebar from './UI/Sidebar';
 import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 import User from './UI/User';
+import { useGlobalContext } from './context';
+import { FaBars } from 'react-icons/fa';
 
 function App() {
+  const { openSidebar } = useGlobalContext();
   return (
-   <>
+    <main className="main">
+      <User />
+      <button onClick={openSidebar} className='sidebar-toggle'>
+          <FaBars />Foodies
+      </button>
       <Router>
         <Switch>
           <Route exact path ='/'>
@@ -29,8 +36,8 @@ function App() {
         </Switch>
         <Sidebar />
       </Router>
-      <User />
-   </>
+      
+   </main>
   );
 }
 
